@@ -12,7 +12,7 @@ public class Reader {
 	   Properties prop = new Properties();
 	   //FileInputStream fStream = new FileInputStream();
 	   
-	   prop.load(new FileInputStream("C:\\Users\\admin\\OneDrive\\Desktop\\Orange_Ashwini\\OrangeHrm_Aradhana\\src\\main\\java\\configurationLayer\\config.properties"));
+	   prop.load(new FileInputStream("C:\\Users\\hendr\\OneDrive\\Desktop\\OrangeHRMGit\\OrangeHrm_Aradhana\\src\\main\\java\\configurationLayer\\config.properties"));
 	   
 	        return  prop.getProperty(key);
 	   
