@@ -6,4 +6,10 @@ Feature: Test OranageHRM Application
  When User enter Username and Password 
  And User click on login button
  
+ Scenario: Test PimPage 
+ 
+ Given User click on Pim Page Link
+ When User click on Add Employee Button
+
+ 
  
