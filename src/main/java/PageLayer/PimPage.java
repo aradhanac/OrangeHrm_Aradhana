@@ -16,6 +16,19 @@ public class PimPage extends BaseTest {
 	@FindBy(xpath="//a[text()='Add Employee']")
 	WebElement AddEmpButton;
 	
+	@FindBy(name ="firstName")
+	WebElement firstnamebox;
+	
+	@FindBy(name ="middleName")
+	WebElement midnamebox;
+	
+	@FindBy(name ="lastName")
+	WebElement lastnamebox;
+	
+	@FindBy(xpath="//button[text() =' Save ']")
+	WebElement savebttn;
+	
+	
 	public PimPage() {
 		
 		PageFactory.initElements(driver, this);
@@ -30,6 +43,19 @@ public class PimPage extends BaseTest {
 	public void clickOnAddEmpButton() {
 		
 		this.AddEmpButton.click();
+	}
+	
+	public void addEmployee(String fname,String mname , String lname)
+	{
+		firstnamebox.sendKeys(fname);
+		midnamebox.sendKeys(mname);
+		lastnamebox.sendKeys(lname);
+		
+		
+	}
+	public void clickOnSavebttn()
+	{
+		savebttn.click();
 	}
 	
 	
